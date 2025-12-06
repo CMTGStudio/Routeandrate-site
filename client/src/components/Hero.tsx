@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBg from "@assets/generated_images/clean_parcels_overhead_hero_image.png";
+import heroBg from "@assets/generated_images/parcels_with_pricing_analysis_desk.png";
 
 export default function Hero() {
   const scrollToContact = () => {
