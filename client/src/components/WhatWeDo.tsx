@@ -31,7 +31,7 @@ export default function WhatWeDo() {
             What We Do
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Route & Rate helps you understand your parcel shipping costs and find better options.
+            Route & Rate helps you understand your parcel shipping costs and pay less for them.
           </p>
         </div>
 
