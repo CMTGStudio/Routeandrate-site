@@ -16,9 +16,9 @@ const services = [
   },
   {
     icon: Handshake,
-    title: "Support renegotiations and tenders",
+    title: "Plan your next contract move",
     description:
-      "We help you renegotiate with existing couriers or run a simple parcel tender if it's worth it.",
+      "We show you whether to swap courier, renegotiate with your current courier or run a full parcel tender – and what a better deal should look like.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function WhatWeDo() {
             What We Do
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Route & Rate helps you understand your shipping costs and find better options.
+            Route & Rate helps you understand your parcel shipping costs and find better options.
           </p>
         </div>
 
