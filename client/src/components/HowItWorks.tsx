@@ -3,19 +3,19 @@ const steps = [
     number: "1",
     title: "Share your current setup",
     description:
-      "You send us recent invoices and a quick overview of how you ship today.",
+      "Send us 6 months of invoices and an overview of how you ship today.",
   },
   {
     number: "2",
-    title: "We model your options",
+    title: "We analyse, benchmark and model your options",
     description:
-      "We benchmark your rates and build a clear like-for-like comparison across couriers.",
+      "We analyse your business needs, benchmark your rates and build a clear side-by-side comparison across couriers, including an estimated saving versus your current setup.",
   },
   {
     number: "3",
-    title: "You choose, we support",
+    title: "You choose, we prepare you",
     description:
-      "You choose the route and rate that fits your business; we support implementation and negotiations.",
+      "You choose the courier and rate that fit your business; we give you a clear recommendation and negotiation plan so you can move forward confidently.",
     callout:
       "If you're in our introductory group, our work is on a no savings, no fee basis – if we don't create measurable savings, you don't pay a penny.",
   },
