@@ -16,7 +16,7 @@ const services = [
   },
   {
     icon: Handshake,
-    title: "Plan your next contract move",
+    title: "Plan your next move",
     description:
       "We show you whether to swap courier, renegotiate with your current courier or run a full parcel tender – and what a better deal should look like.",
   },
