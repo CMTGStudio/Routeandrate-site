@@ -166,7 +166,7 @@ export default function ContactSection() {
                 disabled={isSubmitting}
                 data-testid="button-submit"
               >
-                {isSubmitting ? "Sending..." : "Send enquiry"}
+                {isSubmitting ? "Sending..." : "Request Parcel Review"}
               </Button>
             </form>
 
