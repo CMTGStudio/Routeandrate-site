@@ -1,0 +1,61 @@
+Build a clean, modern, mobile-responsive one-page website for a B2B consulting business called “Route & Rate”.
+
+Tech: Use HTML + CSS (and minimal JS if needed). No frameworks required. Keep the structure simple and easy for a beginner to edit.
+
+Brand & audience:
+– Route & Rate helps founder-led businesses in the UK who ship a lot of parcels but don’t have a big logistics department.
+– We review their parcel shipping, compare different courier options, and help them renegotiate or re-tender their contracts to cut costs and improve reliability.
+
+Overall style:
+– Very clean, professional, “consultancy” vibe (think SaaS/consulting landing page)
+– Plenty of white space, clear sections, simple sans-serif fonts
+– Use a calm, trustworthy colour palette (e.g. deep blue + soft grey + one strong accent for buttons).
+
+Page structure (sections in this order):
+
+Navbar – logo text “Route & Rate”, simple right-side links that scroll to sections: “What We Do”, “How It Works”, “Who We Help”, “Contact”.
+
+Hero section
+– Headline: “Stop overpaying for parcel shipping.”
+– Subheadline: “Route & Rate helps founder-led businesses in the UK cut parcel costs and improve courier reliability with simple, data-backed parcel tenders.”
+– Primary CTA button: “Book a parcel review” (link with #contact anchor).
+– Secondary text link: “Learn how it works” (scrolls to “How It Works”).
+
+“What We Do” section
+– Short intro sentence.
+– 3 cards with icons/headings and brief copy:
+a) “Review your current parcel spend” – “We analyse your invoices, contracts and service levels to see where money is leaking.”
+b) “Compare courier options” – “We run a structured comparison of multiple carriers and services in plain English, not jargon.”
+c) “Support renegotiations and tenders” – “We help you renegotiate with existing couriers or run a simple parcel tender if it’s worth it.”
+
+“How It Works” section
+– Three steps laid out horizontally on desktop, stacked on mobile:
+Step 1: “Share your current setup” – “You send us recent invoices and a quick overview of how you ship today.”
+Step 2: “We model your options” – “We benchmark your rates and build a clear like-for-like comparison across couriers.”
+Step 3: “You choose, we support” – “You choose the route and rate that fits your business; we support implementation and negotiations.”
+
+“Who We Help” section
+– Short headline: “Who Route & Rate is for”
+– Bullet points describing ideal clients, for example:
+– Founder-led ecommerce or B2B businesses in the UK
+– Spending roughly £100k–£500k per year on parcel shipping
+– Using one or two main couriers (like DPD, DHL, UPS, Royal Mail)
+– No in-house logistics or procurement team dedicated to parcels
+
+“Why Work With Us” section
+– 3 short bullets emphasising:
+– “Independent” – we’re not a broker or carrier; we sit on your side of the table.
+– “Focused on parcels” – we specialise in parcel shipping, not every mode under the sun.
+– “Founder-friendly” – simple explanations, clear numbers, no procurement jargon.
+
+Contact / CTA section
+– Headline: “Book a quick parcel review”
+– Short text: “Share a few details about your shipping and we’ll tell you honestly whether a proper parcel tender is worth it.”
+– A simple contact form with fields: Name, Company, Email, Approximate annual parcel spend (dropdown or text), Message.
+– Submit button: “Send enquiry”.
+– Also show your email address as a clickable mailto link: adam@routeandrate.com.
+
+Other requirements:
+– Make the layout responsive and look good on mobile and desktop.
+– Comment the HTML and CSS so a beginner can see where each section starts and ends.
+– Put all CSS either in a <style> block in the HTML head or a single separate CSS file and show both in the output.
