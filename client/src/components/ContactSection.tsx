@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/select";
 import { Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { apiRequest } from "@/lib/queryClient";
 
 const spendRanges = [
   "Under £100k",
@@ -37,23 +38,30 @@ export default function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // todo: remove mock functionality - replace with actual API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Enquiry sent",
-      description: "We'll be in touch shortly to discuss your parcel shipping.",
-    });
-    
-    setFormData({
-      name: "",
-      company: "",
-      email: "",
-      annualSpend: "",
-      message: "",
-    });
-    setIsSubmitting(false);
+    try {
+      await apiRequest("POST", "/api/enquiries", formData);
+      
+      toast({
+        title: "Enquiry sent",
+        description: "We'll be in touch shortly to discuss your parcel shipping.",
+      });
+      
+      setFormData({
+        name: "",
+        company: "",
+        email: "",
+        annualSpend: "",
+        message: "",
+      });
+    } catch (error) {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or email us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
