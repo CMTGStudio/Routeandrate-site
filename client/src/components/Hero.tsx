@@ -22,7 +22,7 @@ export default function Hero() {
           Stop overpaying for parcel shipping.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-3xl mx-auto">
-          Route & Rate reviews your parcel contracts and invoices, comparing courier options and shows you where you can cut costs without hurting delivery performance.
+          Route & Rate reviews your parcel contracts, compares courier options and shows you where to cut shipping costs without hurting delivery performance.
         </p>
         <Button
           size="lg"
