@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import heroBg from "@assets/generated_images/abstract_logistics_hero_background.png";
 
 export default function Hero() {
   const scrollToContact = () => {
@@ -9,8 +10,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-24 bg-gradient-to-b from-primary/5 to-background">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background" />
+      
+      <div className="relative max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-tight mb-6">
           Stop overpaying for parcel shipping.
         </h1>
