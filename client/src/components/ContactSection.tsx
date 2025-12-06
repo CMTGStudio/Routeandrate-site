@@ -73,7 +73,7 @@ export default function ContactSection() {
           </h2>
           <p className="text-lg text-muted-foreground">
             Share a few details about your shipping and we'll tell you honestly 
-            whether a proper parcel tender is worth it.
+            whether a proper parcel analysis/tender is worth it in terms of savings and service.
           </p>
         </div>
 
