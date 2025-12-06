@@ -14,6 +14,8 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
+        role="img"
+        aria-label="Flat lay desk with parcels, laptop and shipping analytics charts"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/75 to-background" />
       
