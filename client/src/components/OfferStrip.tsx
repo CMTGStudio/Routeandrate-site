@@ -5,8 +5,10 @@ export default function OfferStrip() {
         <p className="text-sm md:text-base text-foreground">
           <span className="font-semibold text-[hsl(24_90%_35%)] dark:text-[hsl(24_90%_65%)]">Intro offer:</span>{" "}
           <span className="text-muted-foreground">
-            We're taking on a small number of growing ecommerce and B2B UK businesses on a no savings, no fee basis. 
-            If we don't find measurable parcel savings, our fee is £0.
+            We're taking on a small number of growing ecommerce and B2B UK businesses on a{" "}
+            <span className="font-semibold text-foreground">no savings, no fee</span> basis. 
+            If we don't find measurable parcel savings,{" "}
+            <span className="font-semibold text-foreground">our fee is £0</span>.
           </span>
         </p>
       </div>
