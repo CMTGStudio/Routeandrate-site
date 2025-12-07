@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <a
             href="#"
-            className="text-xl font-semibold text-foreground tracking-tight"
+            className="text-xl font-semibold text-primary tracking-tight"
             data-testid="link-logo"
             onClick={(e) => {
               e.preventDefault();
