@@ -49,7 +49,7 @@ export default function ContactSection() {
         >
           <a href={mailtoLink} data-testid="button-email-cta">
             <Mail className="w-5 h-5 mr-2" />
-            Email Adam to request a review
+            Email us to request a review
           </a>
         </Button>
 
