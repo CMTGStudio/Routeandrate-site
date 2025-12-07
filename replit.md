@@ -11,13 +11,12 @@ A clean, professional one-page B2B consultancy website for Route & Rate, a parce
 - **How It Works** - 3-step process with no-fee callout
 - **Who We Help** - ideal client criteria
 - **Why Work With Us** - 3 differentiators (independent, focused, founder-friendly)
-- **Contact form** - fully functional, submits to backend API
+- **Contact section** - Email-based CTA (mailto: adam@routeandrate.com)
 - **Footer** with branding
 
 ## Tech Stack
 - **Frontend**: React, Tailwind CSS, Shadcn/ui components
-- **Backend**: Express.js
-- **Storage**: In-memory (MemStorage)
+- **Backend**: Express.js (minimal - serves static frontend)
 - **Routing**: Wouter
 
 ## Project Structure
@@ -38,21 +37,17 @@ client/src/
 └── App.tsx
 
 server/
-├── routes.ts (API endpoints)
-├── storage.ts (in-memory storage)
+├── routes.ts (empty - no API needed)
+├── storage.ts (base storage interface)
 └── index.ts (Express server)
 
 shared/
-└── schema.ts (data types for enquiries)
+└── schema.ts (base types)
 ```
-
-## API Endpoints
-- `POST /api/enquiries` - Submit a contact enquiry
-- `GET /api/enquiries` - List all enquiries (for admin use)
 
 ## Design
 - Color palette: Deep blue primary with orange CTA accent
-- Font: DM Sans / Inter
+- Font: DM Sans
 - Style: Clean, professional consultancy aesthetic with generous whitespace
 - Hero background: Flat lay image of parcels, laptop with analytics, and clipboard
 
