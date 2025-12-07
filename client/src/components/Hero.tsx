@@ -10,24 +10,15 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative pt-20 md:pt-40 md:pb-24 overflow-hidden">
-      <div 
-        className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-        role="img"
-        aria-label="Flat lay desk with parcels, laptop and shipping analytics charts"
+    <section className="relative min-h-[70vh] md:min-h-0 pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
+      <img 
+        src={heroBg}
+        alt="Flat lay desk with parcels, laptop and shipping analytics charts"
+        className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
       />
-      <div className="hidden md:block absolute inset-0 bg-gradient-to-b from-background/80 via-background/75 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/55 to-background/90 md:from-background/80 md:via-background/75 md:to-background" />
       
-      <div className="md:hidden w-full pt-4">
-        <img 
-          src={heroBg} 
-          alt="Flat lay desk with parcels, laptop and shipping analytics charts"
-          className="w-full h-auto object-contain"
-        />
-      </div>
-      
-      <div className="relative max-w-4xl mx-auto px-6 text-center py-8 md:py-0">
+      <div className="relative max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-tight mb-6">
           Stop overpaying for parcel shipping.
         </h1>
