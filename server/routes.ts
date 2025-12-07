@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertEnquirySchema } from "@shared/schema";
 import { fromError } from "zod-validation-error";
+import { sendEnquiryNotification } from "./gmail";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -18,6 +19,13 @@ export async function registerRoutes(
       }
 
       const enquiry = await storage.createEnquiry(parsed.data);
+      
+      try {
+        await sendEnquiryNotification(parsed.data);
+      } catch (emailError) {
+        console.error("Failed to send email notification:", emailError);
+      }
+      
       return res.status(201).json(enquiry);
     } catch (error) {
       console.error("Error creating enquiry:", error);
