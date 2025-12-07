@@ -13,7 +13,7 @@ export default function ContactSection() {
         
         <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
           If you'd like to see whether you qualify for the no savings, no fee intro offer, 
-          email me a few details about your shipping and I'll get back to you.
+          email us a few details about your shipping and we'll get back to you.
         </p>
 
         <div className="text-left max-w-md mx-auto mb-10">
