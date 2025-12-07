@@ -10,14 +10,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden min-h-[500px] md:min-h-0">
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
         role="img"
         aria-label="Flat lay desk with parcels, laptop and shipping analytics charts"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/75 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />
       
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-tight mb-6">
