@@ -1,188 +1,72 @@
-import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Mail } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
 
-const spendRanges = [
-  "Under £100k",
-  "£100k – £250k",
-  "£250k – £500k",
-  "£500k – £1m",
-  "Over £1m",
-];
+const mailtoLink = "mailto:adam@routeandrate.com?subject=Parcel%20Review%20Enquiry&body=Name:%0ACompany:%0AAnnual%20parcel%20spend:%0ACurrent%20couriers:%0AMain%20shipping%20issues:%0A";
 
 export default function ContactSection() {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    company: "",
-    email: "",
-    annualSpend: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      await apiRequest("POST", "/api/enquiries", formData);
-      
-      toast({
-        title: "Enquiry sent",
-        description: "We'll be in touch shortly to discuss your parcel shipping.",
-      });
-      
-      setFormData({
-        name: "",
-        company: "",
-        email: "",
-        annualSpend: "",
-        message: "",
-      });
-    } catch (error) {
-      toast({
-        title: "Something went wrong",
-        description: "Please try again or email us directly.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <section id="contact" className="py-20 bg-background">
-      <div className="max-w-2xl mx-auto px-6">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Book a quick parcel review
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Share a few details about your shipping and we'll tell you honestly 
-            whether a proper parcel analysis/tender is worth it in terms of savings and service.
-          </p>
+      <div className="max-w-2xl mx-auto px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+          Request a parcel review
+        </h2>
+        
+        <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+          If you'd like to see whether you qualify for the no savings, no fee intro offer, 
+          email me a few details about your shipping and I'll get back to you.
+        </p>
+
+        <div className="text-left max-w-md mx-auto mb-10">
+          <p className="font-semibold text-foreground mb-4">What to include:</p>
+          <ul className="space-y-2 text-muted-foreground">
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1.5">•</span>
+              <span>Name</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1.5">•</span>
+              <span>Company</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1.5">•</span>
+              <span>Approximate annual parcel spend</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1.5">•</span>
+              <span>Main couriers you use (e.g. DPD, DHL, Royal Mail)</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1.5">•</span>
+              <span>Biggest frustrations with your current shipping setup</span>
+            </li>
+          </ul>
         </div>
 
-        <Card>
-          <CardContent className="pt-8 pb-8 px-6 md:px-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
-                  <Input
-                    id="name"
-                    placeholder="Your name"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    required
-                    data-testid="input-name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="company">Company</Label>
-                  <Input
-                    id="company"
-                    placeholder="Your company"
-                    value={formData.company}
-                    onChange={(e) =>
-                      setFormData({ ...formData, company: e.target.value })
-                    }
-                    required
-                    data-testid="input-company"
-                  />
-                </div>
-              </div>
+        <Button
+          asChild
+          size="lg"
+          className="bg-cta text-cta-foreground text-lg px-8 py-6 mb-6"
+        >
+          <a href={mailtoLink} data-testid="button-email-cta">
+            <Mail className="w-5 h-5 mr-2" />
+            Email Adam to request a review
+          </a>
+        </Button>
 
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="you@company.com"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                  required
-                  data-testid="input-email"
-                />
-              </div>
+        <p className="text-muted-foreground mb-8">
+          Or email directly:{" "}
+          <a
+            href="mailto:adam@routeandrate.com"
+            className="text-primary font-medium hover:underline"
+            data-testid="link-email-direct"
+          >
+            adam@routeandrate.com
+          </a>
+        </p>
 
-              <div className="space-y-2">
-                <Label htmlFor="spend">Approximate annual parcel spend</Label>
-                <Select
-                  value={formData.annualSpend}
-                  onValueChange={(value) =>
-                    setFormData({ ...formData, annualSpend: value })
-                  }
-                >
-                  <SelectTrigger data-testid="select-spend">
-                    <SelectValue placeholder="Select a range" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {spendRanges.map((range) => (
-                      <SelectItem key={range} value={range}>
-                        {range}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message">Message (optional)</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Tell us a bit about your shipping setup..."
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  className="min-h-[120px]"
-                  data-testid="input-message"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full bg-cta text-cta-foreground"
-                disabled={isSubmitting}
-                data-testid="button-submit"
-              >
-                {isSubmitting ? "Sending..." : "Request Parcel Review"}
-              </Button>
-            </form>
-
-            <div className="mt-8 pt-6 border-t border-border text-center">
-              <p className="text-muted-foreground mb-2">Or email us directly:</p>
-              <a
-                href="mailto:adam@routeandrate.com"
-                className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
-                data-testid="link-email"
-              >
-                <Mail className="w-4 h-4" />
-                adam@routeandrate.com
-              </a>
-            </div>
-          </CardContent>
-        </Card>
+        <p className="text-sm text-muted-foreground">
+          We'll only use your details to respond to your enquiry.
+        </p>
       </div>
     </section>
   );
