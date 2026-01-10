@@ -1,9 +1,9 @@
 import { Check } from "lucide-react";
 
 const criteria = [
-  { text: "Growing UK ecommerce or B2B businesses without a logistics team" },
+  { text: "UK ecommerce or B2B businesses wanting to save money" },
   { text: "Spending roughly ", bold: "£100k–£500k per year", suffix: " on parcel shipping" },
-  { text: "Using one or two main couriers (like DPD, DHL, UPS, Royal Mail)" },
+  { text: "Using one or two main couriers (like DPD, DHL, UPS, Royal Mail, Evri)" },
   { text: "No in-house logistics or procurement team dedicated to parcels" },
 ];
 

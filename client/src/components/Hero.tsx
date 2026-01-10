@@ -20,10 +20,10 @@ export default function Hero() {
       
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-tight mb-6">
-          Stop overpaying for parcel shipping.
+          92% of SME's are overpaying for parcel shipping.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-3xl mx-auto">
-          Route & Rate reviews your parcel contracts, compares courier options and shows you where to cut shipping costs without hurting delivery performance.
+          Find out for free how much you can save.
         </p>
         <Button
           size="lg"
@@ -31,7 +31,7 @@ export default function Hero() {
           onClick={scrollToContact}
           data-testid="button-hero-cta"
         >
-          See if you qualify
+          Save me Money
         </Button>
       </div>
     </section>
