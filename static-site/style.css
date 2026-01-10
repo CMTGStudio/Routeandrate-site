@@ -261,12 +261,12 @@ body {
 }
 
 .btn--cta {
-  background-color: var(--cta);
-  color: var(--cta-foreground);
+  background: linear-gradient(to right, #00d4aa, #c4f94b);
+  color: #000000;
 }
 
 .btn--cta:hover {
-  background-color: var(--cta-light);
+  background: linear-gradient(to right, #00e0b5, #d0ff55);
 }
 
 .btn--lg {

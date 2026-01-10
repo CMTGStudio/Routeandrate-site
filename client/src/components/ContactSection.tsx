@@ -44,7 +44,7 @@ export default function ContactSection() {
         <Button
           asChild
           size="lg"
-          className="bg-cta text-cta-foreground text-lg px-8 py-6 mb-6"
+          className="bg-gradient-to-r from-[#00d4aa] to-[#c4f94b] text-black text-lg px-8 py-6 mb-6 font-semibold"
         >
           <a href={mailtoLink} data-testid="button-email-cta">
             <Mail className="w-5 h-5 mr-2" />
