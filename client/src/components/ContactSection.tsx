@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useForm as useFormspree } from "@formspree/react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -20,8 +20,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
 
 const formSchema = z.object({
   name: z.string().min(1, "Please enter your name"),
@@ -42,7 +40,7 @@ const spendOptions = [
 ];
 
 export default function ContactSection() {
-  const [submitted, setSubmitted] = useState(false);
+  const [formspreeState, submitToFormspree] = useFormspree("mzdqgorp");
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -55,16 +53,8 @@ export default function ContactSection() {
     },
   });
 
-  const mutation = useMutation({
-    mutationFn: (data: FormValues) =>
-      apiRequest("POST", "/api/contact", data),
-    onSuccess: () => {
-      setSubmitted(true);
-    },
-  });
-
   const onSubmit = (data: FormValues) => {
-    mutation.mutate(data);
+    submitToFormspree(data);
   };
 
   return (
@@ -79,7 +69,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        {submitted ? (
+        {formspreeState.succeeded ? (
           <div
             className="bg-primary/10 border border-primary/20 rounded-lg px-6 py-8 text-center"
             data-testid="text-success-message"
@@ -177,7 +167,7 @@ export default function ContactSection() {
                 )}
               />
 
-              {mutation.isError && (
+              {formspreeState.errors != null && (
                 <p className="text-sm text-destructive" data-testid="text-error-message">
                   Something went wrong. Please try again or email us directly at adam@routeandrate.com.
                 </p>
@@ -187,10 +177,10 @@ export default function ContactSection() {
                 type="submit"
                 size="lg"
                 className="w-full bg-gradient-to-r from-[#00d4aa] to-[#c4f94b] text-black text-lg py-6 font-semibold"
-                disabled={mutation.isPending}
+                disabled={formspreeState.submitting}
                 data-testid="button-submit-audit"
               >
-                {mutation.isPending ? "Sending…" : "Request an Audit"}
+                {formspreeState.submitting ? "Sending…" : "Request an Audit"}
               </Button>
             </form>
           </Form>
