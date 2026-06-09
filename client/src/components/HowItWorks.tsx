@@ -3,7 +3,7 @@ const steps = [
     number: "1",
     title: "Share your invoices",
     description:
-      "Send us a few months of 3PL invoices. That's all we need to get started — no lengthy onboarding or lengthy questionnaires.",
+      "Send us a few months of 3PL invoices. That's all we need to get started — no lengthy onboarding or complex questionnaires.",
   },
   {
     number: "2",

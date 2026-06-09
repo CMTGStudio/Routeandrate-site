@@ -18,7 +18,7 @@ export default function Hero() {
           Your 3PL is probably overcharging you. Most brands never find out.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-3xl mx-auto">
-          Route & Rate audits your 3PL invoices, benchmarks what you should actually be paying, and puts together a clear recovery plan — on a no savings, no fee basis.
+          Route & Rate audits your 3PL invoices, benchmarks what you should actually be paying, and puts together a clear recovery plan. No savings, no fee.
         </p>
         <Button
           size="lg"

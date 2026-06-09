@@ -186,7 +186,7 @@ export default function ContactSection() {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 text-lg py-6 font-semibold"
+                className="w-full bg-gradient-to-r from-[#00d4aa] to-[#c4f94b] text-black text-lg py-6 font-semibold"
                 disabled={mutation.isPending}
                 data-testid="button-submit-audit"
               >
