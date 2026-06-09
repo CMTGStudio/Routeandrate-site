@@ -35,7 +35,6 @@ export default function HowItWorks() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 md:gap-12 relative">
-          <div className="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-border" style={{ left: '16.67%', right: '16.67%' }} />
           
           {steps.map((step, index) => (
             <div key={index} className="relative" data-testid={`step-${index}`}>
