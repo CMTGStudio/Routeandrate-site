@@ -11,7 +11,7 @@ const pillars = [
     icon: Microscope,
     title: "Built on real logistics experience",
     description:
-      "Our audit methodology comes from years working inside the logistics industry. We know the billing tricks because we've seen them from the inside.",
+      "Our founder has overseen millions in logistics spend across EMEA. We've sat on the other side of these contracts, so we know exactly where the money disappears.",
   },
   {
     icon: Users,
