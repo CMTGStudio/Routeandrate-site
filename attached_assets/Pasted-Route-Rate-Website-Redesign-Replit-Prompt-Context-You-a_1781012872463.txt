@@ -1,0 +1,112 @@
+Route & Rate Website Redesign — Replit Prompt
+Context
+You are redesigning the Route & Rate website (routeandrate.com). The existing site was built for a parcel courier tendering service. The business has pivoted — it is now a 3PL invoice audit service for UK DTC ecommerce brands. The structure, colour palette (navy + white + light grey), and general visual style can be preserved, but all copy, framing, and the ICP (ideal customer profile) section need to be replaced from scratch.
+The business is in early pilot stage. The founder has a corporate logistics procurement background (Abbott Laboratories, EMEA freight tenders, ~$50M spend), and the thesis is simple: 3PL invoices are complex, systematic overcharges of ~8% are routine, and DTC brands have no one in-house to catch them. The pilot is free — no fee, no catch.
+
+What to change section by section
+NAV
+Keep: Route & Rate logo (navy, bold), nav links style
+Change nav links to: What We Do / How It Works / Who We Help / Request an Audit
+The last nav item should be a filled navy button, not a plain link.
+
+HERO SECTION
+Remove the stock photo background entirely. Use a clean white or very light grey (#F7F8FA) background instead.
+New headline (large, bold, dark navy):
+
+Your 3PL is probably overcharging you.
+Most brands never find out.
+
+Subheadline (medium, grey):
+
+Route & Rate audits your 3PL invoices line by line and recovers the money. No fee unless we find savings.
+
+Get a Free Audit" CTA button: "Request an Audit"
+Remove the "92% of SMEs" stat (this was for the old service).
+Remove the intro offer banner entirely.
+
+WHAT WE DO SECTION
+Keep the three-card layout. Replace all three cards:
+Card 1 — Audit your 3PL invoices
+Icon: document/search
+Copy: We go through your 3PL invoices in detail — weight discrepancies, accessorial charges, rate misapplications — and identify every line that shouldn't be there.
+Card 2 — Benchmark against what you should be paying
+Icon: bar chart
+Copy: We compare your contracted rates against what brands of your size and volume typically pay, so you know whether your deal is competitive.
+Card 3 — Give you a clear recovery plan
+Icon: handshake or arrow
+Copy: We tell you exactly what to dispute, how to raise it with your 3PL, and what to put in place to prevent it happening again.
+Section subtitle: "Route & Rate finds the money your 3PL is quietly keeping."
+
+HOW IT WORKS SECTION
+Keep the three-step numbered layout. Replace copy:
+Step 1 — Share your invoices
+Send us 3–6 months of 3PL invoices and a copy of your rate card or contract. That's all we need to get started.
+Step 2 — We audit and build your report
+We analyse every charge line by line, cross-reference against your contract, and identify overcharges, billing errors, and rate misapplications. You get a clear report with the findings.
+Step 3 — You recover the money
+We walk you through exactly what to dispute and how. For pilot brands, this is completely free — no savings, no fee.
+Update the callout box in Step 3 to read:
+
+No savings, no fee. If we don't find overcharges, you don't pay anything.
+
+
+WHO WE HELP SECTION
+Title: "Who Route & Rate is for"
+Subtitle: "We work best with brands that look like this:"
+Replace the four bullet points with:
+
+UK DTC ecommerce brands shipping via a third-party logistics provider (3PL)
+Spending roughly £5k–£100k per month on 3PL fulfilment and shipping
+Growing fast enough that invoices are getting complex — but without a logistics or procurement person in-house
+Founders or ops leads who suspect their 3PL costs are high but don't know where to start
+
+Remove: "B2B businesses", the £100k–£500k annual parcel spend figure, and the courier list (DPD, DHL etc — that was the old service).
+Closing line: "If your 3PL invoices feel like a black box, they probably are."
+
+WHY WORK WITH US SECTION
+Keep the three-column layout. Update:
+Independent
+We're not affiliated with any 3PL. We work for you — not the warehouse.
+Built on real logistics experience
+Our founder manages freight contracts and 3PL relationships at an enterprise level across EMEA. Identifying overcharges and billing errors is what we do day in, day out.
+Founder-friendly
+No jargon, no complexity. You get a clear report and plain-English recommendations — not a 40-page consultancy deck.
+
+CONTACT / CTA SECTION
+Title: "Request an Audit"
+Subtitle: We work with a small number of brands at a time to make sure the work is done properly. If you'd like to find out what your 3PL is actually charging you, get in touch.
+
+Your name
+Brand / company name
+Monthly 3PL spend (approximate) — dropdown: Under £5k / £5k–£20k / £20k–£50k / £50k–£100k / Over £100k
+Which 3PL do you use?
+Anything specific you're concerned about? (open text, optional)
+Submit button: "Request an Audit"
+
+On submit: show a confirmation message — "Thanks — we'll be in touch within 2 working days."
+Remove the "What to include in your email" instructional box entirely — the form replaces it.
+
+Tone and copy principles throughout
+
+Plain, direct, no fluff. Founders are busy.
+Avoid: "world-class", "cutting-edge", "seamless", "holistic", "end-to-end"
+Use: specific numbers, active voice, founder-to-founder register
+The brand is credible but not corporate. Confident but not salesy.
+
+
+Things to preserve
+
+Navy + white + light grey colour palette
+Route & Rate wordmark in bold navy
+Overall single-page scroll layout
+Green gradient CTA button style
+Mobile responsiveness
+
+Things to remove entirely
+
+Stock photo hero background
+All references to parcel couriers (DPD, DHL, Royal Mail, UPS, Evri)
+"Compare courier options" and "Plan your next move" cards
+The £100k–£500k spend qualifier
+"B2B businesses" from the ICP
+The "email us to request a review" button (replaced by the form)
