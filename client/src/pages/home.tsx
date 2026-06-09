@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import OfferStrip from "@/components/OfferStrip";
 import WhatWeDo from "@/components/WhatWeDo";
 import HowItWorks from "@/components/HowItWorks";
 import WhoWeHelp from "@/components/WhoWeHelp";
@@ -14,7 +13,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <OfferStrip />
         <WhatWeDo />
         <HowItWorks />
         <WhoWeHelp />

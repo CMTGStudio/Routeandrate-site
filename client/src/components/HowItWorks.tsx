@@ -1,23 +1,23 @@
 const steps = [
   {
     number: "1",
-    title: "Share your current setup",
+    title: "Share your invoices",
     description:
-      "Send us 6 months of invoices and an overview of how you ship today.",
+      "Send us a few months of 3PL invoices. That's all we need to get started — no lengthy onboarding or lengthy questionnaires.",
   },
   {
     number: "2",
-    title: "We analyse, benchmark and model your options",
+    title: "We audit and build your report",
     description:
-      "We analyse your business needs, benchmark your rates and build a clear side-by-side comparison across couriers, including an estimated saving versus your current setup.",
+      "We analyse every line of your billing, benchmark your rates against what brands like yours typically pay, and document what we find.",
   },
   {
     number: "3",
-    title: "You choose, we prepare you",
+    title: "You recover the money",
     description:
-      "You choose the courier and rate that fit your business; we give you a clear recommendation and negotiation plan so you can move forward confidently.",
+      "We hand you a clear, actionable report showing exactly what was overcharged and how to get it back.",
     callout:
-      "If you're in our introductory group, our work is on a no savings, no fee basis – if we don't create measurable savings, you don't pay a penny.",
+      "No savings, no fee. If we don't find overcharges, you don't pay anything.",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-lg text-muted-foreground">
-            A simple, three-step process to lower your parcel costs.
+            A simple, three-step process to find and recover 3PL overcharges.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export default function HowItWorks() {
                   {step.description}
                 </p>
                 {step.callout && (
-                  <p className="text-sm text-primary bg-primary/10 rounded-md px-4 py-3 mt-2">
+                  <p className="text-sm text-primary bg-primary/10 rounded-md px-4 py-3 mt-2 font-medium">
                     {step.callout}
                   </p>
                 )}

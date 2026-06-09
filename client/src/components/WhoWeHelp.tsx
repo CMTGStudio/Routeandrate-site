@@ -1,10 +1,10 @@
 import { Check } from "lucide-react";
 
 const criteria = [
-  { text: "UK ecommerce or B2B businesses wanting to save money" },
-  { text: "Spending roughly ", bold: "£100k–£500k per year", suffix: " on parcel shipping" },
-  { text: "Using one or two main couriers (like DPD, DHL, UPS, Royal Mail, Evri)" },
-  { text: "No in-house logistics or procurement team dedicated to parcels" },
+  { text: "UK DTC ecommerce brands using a third-party logistics provider (3PL)" },
+  { text: "Paying your 3PL for pick, pack, storage, or fulfilment services" },
+  { text: "Spending enough with your 3PL that billing errors actually hurt — typically £5k+/month" },
+  { text: "No dedicated finance or logistics team checking the invoices line by line" },
 ];
 
 export default function WhoWeHelp() {
@@ -16,7 +16,7 @@ export default function WhoWeHelp() {
             Who Route & Rate is for
           </h2>
           <p className="text-lg text-muted-foreground">
-            We work best with businesses that look like this:
+            We work best with brands that look like this:
           </p>
         </div>
 
@@ -32,15 +32,13 @@ export default function WhoWeHelp() {
               </div>
               <span className="text-foreground text-lg leading-relaxed">
                 {item.text}
-                {item.bold && <span className="font-semibold">{item.bold}</span>}
-                {item.suffix}
               </span>
             </li>
           ))}
         </ul>
 
         <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-          If this sounds like you, a proper review is almost always worth the conversation.
+          If this sounds like you, there's a good chance we'll find something worth recovering.
         </p>
       </div>
     </section>

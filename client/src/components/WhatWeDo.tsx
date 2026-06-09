@@ -1,24 +1,24 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { FileSearch, BarChart3, Handshake } from "lucide-react";
+import { FileSearch, BarChart3, ClipboardList } from "lucide-react";
 
 const services = [
   {
     icon: FileSearch,
-    title: "Review your current parcel spend",
+    title: "Audit your 3PL invoices",
     description:
-      "We analyse your invoices, contracts and service levels to see where money is leaking.",
+      "We go line by line through your 3PL billing to find errors, duplicate charges, and fees you should never have been paying.",
   },
   {
     icon: BarChart3,
-    title: "Compare courier options",
+    title: "Benchmark against what you should be paying",
     description:
-      "We run a structured comparison of multiple carriers and services in plain English, not jargon.",
+      "We compare your rates against current market benchmarks so you can see exactly where you're being overcharged.",
   },
   {
-    icon: Handshake,
-    title: "Plan your next move",
+    icon: ClipboardList,
+    title: "Give you a clear recovery plan",
     description:
-      "We show you whether to swap courier, renegotiate with your current courier or run a full parcel tender – and what a better deal should look like.",
+      "We put together a straightforward report with the specific overcharges we've found and what to do about them.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function WhatWeDo() {
             What We Do
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Route & Rate helps you understand your parcel shipping costs and pay less for them.
+            Route & Rate helps UK DTC brands find and recover money lost to 3PL billing errors and overcharges.
           </p>
         </div>
 

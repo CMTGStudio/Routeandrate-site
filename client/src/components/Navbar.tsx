@@ -6,8 +6,9 @@ const navLinks = [
   { label: "What We Do", href: "#what-we-do" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Who We Help", href: "#who-we-help" },
-  { label: "Contact", href: "#contact" },
 ];
+
+const ctaLink = { label: "Request an Audit", href: "#contact" };
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -47,6 +48,13 @@ export default function Navbar() {
                 {link.label}
               </Button>
             ))}
+            <Button
+              className="ml-2 bg-primary text-primary-foreground hover:bg-primary/90"
+              onClick={() => scrollToSection(ctaLink.href)}
+              data-testid="link-nav-request-an-audit"
+            >
+              {ctaLink.label}
+            </Button>
           </div>
 
           <Button
@@ -74,6 +82,13 @@ export default function Navbar() {
                   {link.label}
                 </Button>
               ))}
+              <Button
+                className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 mt-1"
+                onClick={() => scrollToSection(ctaLink.href)}
+                data-testid="link-nav-mobile-request-an-audit"
+              >
+                {ctaLink.label}
+              </Button>
             </div>
           </div>
         )}

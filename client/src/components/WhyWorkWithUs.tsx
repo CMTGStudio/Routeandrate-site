@@ -1,23 +1,23 @@
-import { Shield, Package, Users } from "lucide-react";
+import { Shield, Microscope, Users } from "lucide-react";
 
 const pillars = [
   {
     icon: Shield,
     title: "Independent",
     description:
-      "We're not a broker or carrier; we sit on your side of the table.",
+      "We're not connected to any 3PL provider. We work for you, not for the warehouse, which means our findings are always in your interest.",
   },
   {
-    icon: Package,
-    title: "Focused on parcels",
+    icon: Microscope,
+    title: "Built on real logistics experience",
     description:
-      "We specialise in parcel shipping, not every mode under the sun.",
+      "Our audit methodology comes from years working inside the logistics industry. We know the billing tricks because we've seen them from the inside.",
   },
   {
     icon: Users,
     title: "Founder-friendly",
     description:
-      "Simple explanations, clear numbers, no procurement jargon.",
+      "Plain language, clear numbers, no jargon. We explain what we found and what it means for your business — without drowning you in a 60-page report.",
   },
 ];
 
